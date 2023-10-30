@@ -1,5 +1,7 @@
 package com.tecnocoli.ems50;
 
+import android.bluetooth.BluetoothAdapter;
+import android.content.Intent;
 import android.os.Bundle;
 
 import com.google.android.material.snackbar.Snackbar;
@@ -18,11 +20,14 @@ import com.tecnocoli.ems50.databinding.ActivityMainBinding;
 
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
     private AppBarConfiguration appBarConfiguration;
     private ActivityMainBinding binding;
+    private BluetoothAdapter BA;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -45,6 +50,8 @@ public class MainActivity extends AppCompatActivity {
                         .setAction("Action", null).show();
             }
         });
+        BA = BluetoothAdapter.getDefaultAdapter();
+        BtEnable();
 
 
     }
@@ -77,4 +84,36 @@ public class MainActivity extends AppCompatActivity {
         return NavigationUI.navigateUp(navController, appBarConfiguration)
                 || super.onSupportNavigateUp();
     }
+
+    public void BtEnable(){
+        //liga o bluetooth
+        if (BA == null){
+            Toast.makeText(MainActivity.this, "Bluetooth NOT FOUND", Toast.LENGTH_LONG).show();
+        }else{
+            if (!BA.isEnabled()) {
+                Intent enableBtIntent = new Intent(BluetoothAdapter.ACTION_REQUEST_ENABLE);
+                startActivityForResult(enableBtIntent, 1);
+
+            }else{
+                Toast.makeText(MainActivity.this, "BlueTooth ON", Toast.LENGTH_LONG).show();
+            }
+
+        }
+
+        }
+//        if (!BA.isEnabled()) {
+//            Intent turnOn = new Intent(BluetoothAdapter.ACTION_REQUEST_ENABLE);
+//            startActivityForResult(turnOn, REQUEST_ENABLE_BT);
+//            Toast.makeText(MainActivity.this, "Bluetooth Ligado", Toast.LENGTH_SHORT).show();
+//
+//        } else {
+//            lookFor();
+//        }
+//        // Essa if em especial, verifica se a versão Android é 6.0 ou maior, pois caso seja, uma permissão para localização, além das relacionadas ao Bluetooth, sao necessárias.
+//        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+//            if(checkSelfPermission(Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED){
+//                requestPermissions(PermissionsLocation,ResquestLocationId);
+//            }
+//        }
+//    }
 }
