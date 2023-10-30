@@ -1,0 +1,30 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.tecnocoli.ems50.MainActivity">
+    <item
+        android:id="@+id/action_home"
+        android:orderInCategory="100"
+        android:title="@string/settings"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_about"
+        android:orderInCategory="100"
+        android:title="@string/about"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_training"
+        android:orderInCategory="100"
+        android:title="@string/training"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_connection"
+        android:orderInCategory="100"
+        android:title="@string/connection"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="100"
+        android:title="@string/settings"
+        app:showAsAction="never" />
+</menu>

@@ -1,0 +1,62 @@
+<resources>
+    <string name="app_name">Ems50</string>
+    <string name="action_settings">Settings</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="home_fragment_label">Home</string>
+    <string name="about_fragment_label">About</string>
+    <string name="settings_fragment_label">Settings</string>
+    <string name="training_fragment_label">Training</string>
+    <string name="connection_fragment_label">Connection</string>
+
+    <string name="home">Home</string>
+    <string name="settings">Settings</string>
+    <string name="about">About</string>
+    <string name="training">Training</string>
+    <string name="connection">Connection</string>
+
+    <string name="device">Device</string>
+    <string name="channel">Channel</string>
+    <string name="address">Channel</string>
+    <string name="battery">Battery</string>
+    <string name="battery_cell1">Battery Cell 1</string>
+    <string name="battery_cell2">Battery Cell 2</string>
+    <string name="battery_total">Battery Total:</string>
+    <string name="temperature">Temperature</string>
+    <string name="channel_1">Channel 1</string>
+    <string name="channel_2">Channel 2</string>
+    <string name="channel_3">Channel 3</string>
+    <string name="channel_4">Channel 4</string>
+    <string name="channel_5">Channel 5</string>
+    <string name="channel_6">Channel 6</string>
+    <string name="channel_7">Channel 7</string>
+    <string name="channel_8">Channel 8</string>
+    <string name="connect">Connect Address</string>
+    <string name="disconnect">Disconnect</string>
+    <string name="enable">Enable</string>
+    <string name="disable">Disable</string>
+    <string name="run">Run</string>
+    <string name="stop">Stop</string>
+
+
+    <string name="name">Name:</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="lorem_ipsum">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam in scelerisque sem. Mauris
+        volutpat, dolor id interdum ullamcorper, risus dolor egestas lectus, sit amet mattis purus
+        dui nec risus. Maecenas non sodales nisi, vel dictum dolor. Class aptent taciti sociosqu ad
+        litora torquent per conubia nostra, per inceptos himenaeos. Suspendisse blandit eleifend
+        diam, vel rutrum tellus vulputate quis. Aliquam eget libero aliquet, imperdiet nisl a,
+        ornare ex. Sed rhoncus est ut libero porta lobortis. Fusce in dictum tellus.\n\n
+        Suspendisse interdum ornare ante. Aliquam nec cursus lorem. Morbi id magna felis. Vivamus
+        egestas, est a condimentum egestas, turpis nisl iaculis ipsum, in dictum tellus dolor sed
+        neque. Morbi tellus erat, dapibus ut sem a, iaculis tincidunt dui. Interdum et malesuada
+        fames ac ante ipsum primis in faucibus. Curabitur et eros porttitor, ultricies urna vitae,
+        molestie nibh. Phasellus at commodo eros, non aliquet metus. Sed maximus nisl nec dolor
+        bibendum, vel congue leo egestas.\n\n
+
+    </string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
